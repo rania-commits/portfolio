@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - NOM PRENOM | Développeuse Web</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                   <li><a href="#about">À propos</a></li>
+                    <li><a href="#education">Parcours</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <header class="hero">
+            <div class="hero-content">
+                <h1>NOM PRENOM</h1>
+                 <h2>Je suis <span class="typing"></span></h2>
+                <p class="subtitle"> Étudiante en informatique passionnée par le développement web & la création digitale </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-primary">Voir mes projets</a>
+                    <a href="#contact" class="cta-secondary">Me contacter</a>
+                </div>
+            </div>
+        </header>
+
+    
+   <!-- À PROPOS -->
+  <section id="about" class="section">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="profile.png" alt="Medfai Ranya" class="profile-img">
+      </div>
+      <div class="about-text">
+        <h2>À propos de moi</h2>
+        <p>
+          Passionnée par le développement web, je m’intéresse autant au front-end qu’au back-end.  
+          Mon objectif : devenir développeuse full-stack créative, capable de concevoir des expériences 
+          utilisateur fluides et modernes. J’aime apprendre, expérimenter et construire des projets utiles 🌸
+        </p>
+      </div>
+    </div>
+  </section>
+    
+
+
+    <!-- PARCOURS -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title"> Mon Parcours</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3>Licence en Informatique</h3>
+          <p>Université de [ton université] – 2022 à aujourd’hui</p>
+          <span class="timeline-desc">Apprentissage des fondamentaux du développement, de la POO et des bases de données.</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3>Baccalauréat Scientifique</h3>
+          <p>Lycée [nom du lycée] – 2023</p>
+          <span class="timeline-desc">Mention Bien | Option Mathématiques & Informatique.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-toggle">
+                <button class="toggle-btn active" onclick="showSkills('front')">Front-end</button>
+                <button class="toggle-btn" onclick="showSkills('back')">Back-end</button>
+                <button class="toggle-btn" onclick="showSkills('tools')">Outils</button>
+                <button class="toggle-btn" onclick="showSkills('frameworks')">Frameworks</button>
+            </div>
+
+            <div id="front-skills" class="skills-container active">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Compétences Front-end</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="assets/html.svg" alt="HTML">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/css.svg" alt="CSS">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/javascript.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/react.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="back-skills" class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Compétences Back-end</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="assets/c++.svg" alt="C++">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/java.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/python.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/php.svg" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tools-skills" class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-toolbox"></i> Outils</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="assets/git.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/bitBucket.svg" alt="BitBucket">
+                            <span>BitBucket</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/visual-studio-code.svg" alt="visual-studio-code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/sql.svg" alt="PostgreSql">
+                            <span>PostgreSql</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/jira.svg" alt="Jira">
+                            <span>Jira</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/figma.svg" alt="Figma">
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/canva.svg" alt="Canva">
+                            <span>Canva</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frameworks-skills" class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Frameworks</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="assets/react.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/vue.svg" alt="Vue">
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/angular.svg" alt="Angular">
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/webpack.svg" alt="Webpack">
+                            <span>Webpack</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/bootstrap.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/qt.svg" alt="Qt">
+                            <span>Qt</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="project-grid">
+
+                <!-- SECTION PROJETS -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="project-grid">
+
+            <!-- Exemple projet avec modal -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="Image/alice.png" alt="Alice in Memoryland">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <p>Un jeu de Memory développé en React.</p>
+                            <button class="project-btn" data-modal="modal-alice">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span>Alice in Memoryland</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- MODAL DÉTAILS PROJET -->
+<div id="modal-alice" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Alice in Memoryland</h3>
+        <p><strong>Langages :</strong> React, JavaScript, CSS</p>
+        <p><strong>Description :</strong> Jeu de Memory où les joueurs doivent retrouver des paires de cartes identiques.</p>
+        
+        <!-- Vidéo YouTube ou demo -->
+        <div class="video-container">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/XXXXXXXX" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="project-links">
+            <a href="https://github.com/ton-repo" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Code source
+            </a>
+            <a href="https://ton-projet-en-ligne.com" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Démo
+            </a>
+        </div>
+    </div>
+</div>
+
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Image/bibliotheque.png" alt="Bibliothèque">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>Bibliothèque</h4>
+                                <p>Une application de gestion de bibliothèque en Java permettant d'ajouter, rechercher et emprunter, de supprimer et modifier des livres.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Bibliothèque</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Image/image2.png" alt="Gestion des frais">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <p>Application Qt permettant de gérer efficacement les frais de déplacement professionnels.</p>
+                                <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Gestion des frais</span>
+                        
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Image/recipe.png" alt="Gestion des frais">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>CuisinApi</h4>
+                                <p>Une application web de cuisine proposant des recettes de différents pays avec tous les détails de préparation.</p>
+                                <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>My RecApi</span>
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">Contacte<span>MOI!</span></h2>
+                <!-- Formulaire de contact -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom" required>
+                        <input type="email" placeholder="Votre adresse mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Numéro de télephone" required>
+                        <input type="text" placeholder="Objet " required>
+                    </div>
+                    <textarea placeholder="Ton Message" required></textarea>
+                    <button type="submit" class="contact-btn"> Envoyer un message</button>
+                </form>
+            </div>
+        </div>
+
+     
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Medfai Ranya. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ton-profil-linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+     const words = ["étudiante en informatique.", "développeuse web.", "créatrice digitale.", "passionnée par la tech."];
+    let i = 0, j = 0, isDeleting = false;
+    const typing = document.querySelector(".typing");
+
+    function type() {
+      const word = words[i];
+      typing.textContent = word.substring(0, j);
+      if (!isDeleting && j < word.length) j++;
+      else if (isDeleting && j > 0) j--;
+      else if (!isDeleting && j === word.length) isDeleting = true;
+      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % words.length; }
+      setTimeout(type, isDeleting ? 60 : 100);
+    }
+    type();
+
+        function showSkills(skillType) {
+    const containers = document.querySelectorAll('.skills-container');
+    containers.forEach(container => {
+        container.classList.remove('active'); 
+    });
+
+    document.getElementById(skillType + '-skills').classList.add('active');
+
+    const buttons = document.querySelectorAll('.toggle-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('active'); // Enlever la classe active
+    });
+    document.querySelector('.toggle-btn[onclick="showSkills(\'' + skillType + '\')"]').classList.add('active'); // Ajouter la classe active au bouton cliqué
+}
+// Ouvrir le modal
+document.querySelectorAll('.project-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modalId = btn.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = "block";
+    });
+});
+
+// Fermer le modal
+document.querySelectorAll('.close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+        closeBtn.closest('.modal').style.display = "none";
+    });
+});
+
+// Fermer si clic en dehors du modal
+window.onclick = function(event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+}
+
+    </script>
+    
+        
+</body>
+</html>
+

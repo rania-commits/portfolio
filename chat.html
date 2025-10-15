@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Medfai Ranya | Développeuse Web</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="dark-theme">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">💖 Ranya Dev</h1>
+      <ul class="nav-menu">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#education">Parcours</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>👋 Salut, moi c’est <span class="highlight">Medfai Ranya</span></h1>
+      <h2>Je suis <span class="typing"></span></h2>
+      <p class="subtitle">Étudiante en informatique passionnée par le développement web & la création digitale ✨</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="cta-primary">Voir mes projets</a>
+        <a href="#contact" class="cta-secondary">Me contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- À PROPOS -->
+  <section id="about" class="section">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="profile.png" alt="Medfai Ranya" class="profile-img">
+      </div>
+      <div class="about-text">
+        <h2>À propos de moi</h2>
+        <p>
+          Passionnée par le développement web, je m’intéresse autant au front-end qu’au back-end.  
+          Mon objectif : devenir développeuse full-stack créative, capable de concevoir des expériences 
+          utilisateur fluides et modernes. J’aime apprendre, expérimenter et construire des projets utiles 🌸
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">🎓 Mon Parcours</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3>Licence en Informatique</h3>
+          <p>Université de [ton université] – 2022 à aujourd’hui</p>
+          <span class="timeline-desc">Apprentissage des fondamentaux du développement, de la POO et des bases de données.</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3>Baccalauréat Scientifique</h3>
+          <p>Lycée [nom du lycée] – 2022</p>
+          <span class="timeline-desc">Mention Bien | Option Mathématiques & Informatique.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">💡 Mes Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Front-End</h3>
+          <p>HTML5 • CSS3 • JavaScript • React • Bootstrap</p>
+        </div>
+        <div class="skill-category">
+          <h3>Back-End</h3>
+          <p>Java • Python • PHP • C++ • SQL</p>
+        </div>
+        <div class="skill-category">
+          <h3>Outils</h3>
+          <p>Git • VS Code • Figma • Canva • Jira</p>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks</h3>
+          <p>React • Vue.js • Angular • Qt</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">🚀 Mes Projets</h2>
+      <div class="project-grid">
+
+        <!-- Projet 1 -->
+        <article class="project-card">
+          <img src="Image/alice.png" alt="Alice in Memoryland">
+          <div class="overlay">
+            <h3>Alice in Memoryland</h3>
+            <p>Un jeu de Memory développé en React.</p>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-card">
+          <img src="Image/bibliotheque.png" alt="Bibliothèque">
+          <div class="overlay">
+            <h3>Bibliothèque</h3>
+            <p>Application de gestion de livres en Java.</p>
+          </div>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project-card">
+          <img src="Image/image2.png" alt="Gestion des frais">
+          <div class="overlay">
+            <h3>Gestion des frais</h3>
+            <p>Application Qt pour la gestion des frais professionnels.</p>
+          </div>
+        </article>
+
+        <!-- Projet 4 -->
+        <article class="project-card">
+          <img src="Image/recipe.png" alt="CuisinApi">
+          <div class="overlay">
+            <h3>CuisinApi</h3>
+            <p>Application web proposant des recettes du monde.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">📬 Contacte-moi</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Objet" required>
+        <textarea placeholder="Ton message..." required></textarea>
+        <button type="submit" class="contact-btn">Envoyer ✉️</button>
+      </form>
+      <div class="contact-info">
+        <a href="mailto:raniamedfai5@gmail.com"><i class="fas fa-envelope"></i> raniamedfai5@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Medfai Ranya — Créé avec 💖 et du code.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ton-profil-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ton-github" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT TEXTE ANIMÉ -->
+  <script>
+    const words = ["étudiante en informatique.", "développeuse web.", "créatrice digitale.", "passionnée par la tech."];
+    let i = 0, j = 0, isDeleting = false;
+    const typing = document.querySelector(".typing");
+
+    function type() {
+      const word = words[i];
+      typing.textContent = word.substring(0, j);
+      if (!isDeleting && j < word.length) j++;
+      else if (isDeleting && j > 0) j--;
+      else if (!isDeleting && j === word.length) isDeleting = true;
+      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % words.length; }
+      setTimeout(type, isDeleting ? 60 : 100);
+    }
+    type();
+  </script>
+</body>
+</html>
